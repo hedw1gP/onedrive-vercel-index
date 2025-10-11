@@ -22,7 +22,7 @@ dependencies:
     version: 0.2.0(@fortawesome/fontawesome-svg-core@6.2.1)(react@18.2.0)
   '@headlessui/react':
     specifier: ^1.7.8
-    version: 1.7.8(react-dom@18.2.0)(react@18.2.0)
+    version: 1.7.19(react-dom@18.2.0)(react@18.2.0)
   '@tailwindcss/line-clamp':
     specifier: ^0.4.2
     version: 0.4.2(tailwindcss@3.2.4)
@@ -73,7 +73,7 @@ dependencies:
     version: 0.0.16(next@13.1.6)(react@18.2.0)
   plyr-react:
     specifier: ^5.1.2
-    version: 5.1.2(plyr@3.7.3)(react@18.2.0)
+    version: 5.1.2(plyr@3.8.3)(react@18.2.0)
   preview-office-docs:
     specifier: ^1.0.2
     version: 1.0.2(react@18.2.0)
@@ -493,13 +493,14 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@headlessui/react@1.7.8(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-zcwb0kd7L05hxmoAMIioEaOn235Dg0fUO+iGbLPgLVSjzl/l39V6DTpC2Df49PE5aG5/f5q0PZ9ZHZ78ENNV+A==}
+  /@headlessui/react@1.7.19(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Ll+8q3OlMJfJbAKM/+/Y2q6PPYbryqNTXDbryx7SXLIDamkF6iQFbriYHga0dY44PvDhvvBWCx1Xj4U5+G4hOw==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16 || ^17 || ^18
       react-dom: ^16 || ^17 || ^18
     dependencies:
+      '@tanstack/react-virtual': 3.13.12(react-dom@18.2.0)(react@18.2.0)
       client-only: 0.0.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -702,6 +703,21 @@ packages:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
       tailwindcss: 3.2.4(postcss@8.4.21)
+    dev: false
+
+  /@tanstack/react-virtual@3.13.12(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Gd13QdxPSukP8ZrkbgS2RwoZseTTbQPLnQEn7HY/rqtM+8Zt95f7xKC7N0EsKs7aoz0WzZ+fditZux+F8EzYxA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    dependencies:
+      '@tanstack/virtual-core': 3.13.12
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@tanstack/virtual-core@3.13.12:
+    resolution: {integrity: sha512-1YBOJfRHV4sXUmWsFSf5rQor4Ss82G8dQWLRbnk3GA4jeP8hQt1hxXh0tmflpC0dz3VgEv/1+qwPyLeWkQuPFA==}
     dev: false
 
   /@types/cookie@0.3.3:
@@ -1273,7 +1289,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -1385,6 +1401,11 @@ packages:
 
   /core-js@3.27.2:
     resolution: {integrity: sha512-9ashVQskuh5AZEZ1JdQWp1GqSoC1e1G87MzRqg2gIfVAQ7Qn9K+uFj8EcniUFA4P2NLZfV+TOlX1SzoKfo+s7w==}
+    requiresBuild: true
+    dev: false
+
+  /core-js@3.46.0:
+    resolution: {integrity: sha512-vDMm9B0xnqqZ8uSBpZ8sNtRtOdmfShrvT6h2TuQGLs0Is+cR0DYbj/KWP6ALVNbWPpqA/qPLoOuppJN07humpA==}
     requiresBuild: true
     dev: false
 
@@ -2320,8 +2341,8 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -3167,8 +3188,8 @@ packages:
     resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
     engines: {node: '>=10'}
 
-  /loadjs@4.2.0:
-    resolution: {integrity: sha512-AgQGZisAlTPbTEzrHPb6q+NYBMD+DP9uvGSIjSUM5uG+0jG15cb8axWpxuOIqrmQjn6scaaH8JwloiP27b2KXA==}
+  /loadjs@4.3.0:
+    resolution: {integrity: sha512-vNX4ZZLJBeDEOBvdr2v/F+0aN5oMuPu7JTqrMwp+DtgK+AryOlpy6Xtm2/HpNr+azEa828oQjOtWsB6iDtSfSQ==}
     dev: false
 
   /localforage@1.10.0:
@@ -4035,7 +4056,7 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
-  /plyr-react@5.1.2(plyr@3.7.3)(react@18.2.0):
+  /plyr-react@5.1.2(plyr@3.8.3)(react@18.2.0):
     resolution: {integrity: sha512-RHRlK5wKIRIpX0xHmnHcGJGH2hFAU7njHrIE2bv/8J2l9BjmCM7KOaRKMQYPxkpCNXGtdVgAt3qYitegRN7g9g==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
@@ -4045,19 +4066,19 @@ packages:
       react:
         optional: true
     dependencies:
-      plyr: 3.7.3
+      plyr: 3.8.3
       react: 18.2.0
       react-aptor: 2.0.0(react@18.2.0)
     dev: false
 
-  /plyr@3.7.3:
-    resolution: {integrity: sha512-ORULENBvEvvzMYXRQBALDmEi8P+wZt1Hr/NvHqchu/t7E2xJKNkRYWx0qCA1HETIGZ6zobrOVgqeAUqWimS7fQ==}
+  /plyr@3.8.3:
+    resolution: {integrity: sha512-0+iI5uw0WRvtKBpgPCkmQQv7ucHVQKTEo6UFJjgJ8cy/JZhy0dQqshHQVitHXV6l2O3MzhgnuvQ95VSkWcWeSw==}
     dependencies:
-      core-js: 3.27.2
+      core-js: 3.46.0
       custom-event-polyfill: 1.0.7
-      loadjs: 4.2.0
+      loadjs: 4.3.0
       rangetouch: 2.0.1
-      url-polyfill: 1.1.12
+      url-polyfill: 1.1.14
     dev: false
 
   /postcss-import@14.1.0(postcss@8.4.21):
@@ -5314,8 +5335,8 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /url-polyfill@1.1.12:
-    resolution: {integrity: sha512-mYFmBHCapZjtcNHW0MDq9967t+z4Dmg5CJ0KqysK3+ZbyoNOWQHksGCTWwDhxGXllkWlOc10Xfko6v4a3ucM6A==}
+  /url-polyfill@1.1.14:
+    resolution: {integrity: sha512-p4f3TTAG6ADVF3mwbXw7hGw+QJyw5CnNGvYh5fCuQQZIiuKUswqcznyV3pGDP9j0TSmC4UvRKm8kl1QsX1diiQ==}
     dev: false
 
   /use-clipboard-copy@0.2.0(react@18.2.0):
